@@ -15,7 +15,7 @@ const Home = () => (
     </section>
 
     <section className={styles.section}>
-      <img src="/images/quill_art_7.jpg" alt="Colorful Design" className={styles.image} />
+      <img src="/images/quill_art_1.jpg" alt="Colorful Design" className={styles.image} />
       <div className={styles.textContainer}>
         <h2 className={styles.heading}>Inspiring Designs</h2>
         <p className={styles.text}>
