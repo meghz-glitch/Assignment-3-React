@@ -1,0 +1,44 @@
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.galleryImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover .galleryImage {
+  transform: scale(1.05);
+}
+
+.imageCaption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #230dca;
+}
+
+
+@media (max-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 8px; 
+    padding: 8px; 
+  }
+
+  .imageCaption {
+    font-size: 12px; /* Reduces font size */
+  }
+}
